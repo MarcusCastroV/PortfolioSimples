@@ -20,11 +20,11 @@ export const RecentProjects = () => {
   return (
     <div className='flex gap-[3%] flex-wrap'>
       {repos.length > 0 &&
-        repos.slice(0, 4).map((repo) => (
+        repos.filter((repo) => repo.id !== 666090106).slice(0, 4).map((repo) => (
           <Card
             key={repo.id}
             h='h-56'
-            w='w-[47%]'
+            w='w-full md:w-[47%]'
             justify='justify-between'
             px='px-5'
             py='py-5'
@@ -37,7 +37,9 @@ export const RecentProjects = () => {
               <IconFolderOpen />
               {repo.name}
             </a>
-            {repo.description ? repo.description : 'Vou adicionar a descrição'}
+
+            <p className={'text-sm text-ellipsis line-clamp-4'}>{repo.description ? repo.description : 'Vou adicionar a descrição'}</p>
+
             <div className='flex justify-between'>
               <div className='flex gap-6'>
                 <a

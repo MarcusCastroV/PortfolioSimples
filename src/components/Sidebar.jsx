@@ -23,8 +23,8 @@ export const Sidebar = () => {
   ];
   
   return (
-    <div className='w-3/12 h-screen pl-5 pb-5'>
-      <Card h={'h-72'} align='items-center'>
+    <div className='w-full md:w-3/12 h-auto px-5 pb-5 flex flex-col justify-center items-center'>
+      <Card h='h-72' align='items-center'>
         <div className='rounded-full filter drop-shadow-md bg-white w-32 h-32 flex mb-5'></div>
         <h1 className='text-lg'>Marcus Castro</h1>
       </Card>
@@ -56,7 +56,7 @@ export const Sidebar = () => {
         />
         <ContactInfo icon={<IconMail />} text={'marcuscastrov1@gmail.com'} />
       </Card>
-      <Card h={'h-64'} justify={'justify-start'}>
+      <Card h='h-auto md:h-64' py='pb-5' justify={'justify-start'}>
         <h1 className='ml-5 mt-5 mb-2 text-lg'>Tecnologias</h1>
         <div className='flex col flex-wrap text-sm justify-center'>
         {technologies.map((item, index) => (
@@ -90,7 +90,6 @@ export const Sidebar = () => {
             </li>
           </ul>
       </Card>
-      <div className='h-5'/>
 
     </div>
   )

@@ -3,10 +3,10 @@ import { Card } from './Card'
 import { RecentProjects } from './RecentProjects'
 export const Projects = () => {
   return (
-    <div className='pl-5 w-9/12 '>
+    <div className='px-5 md:px-2 pb-5 w-full md:w-9/12 '>
       <Card
         h='h-20'
-        w='w-[97%]'
+        w='w-full md:w-[97%]'
         flexDir='flex-row'
         justify='justify-between'
         align='items-center'
