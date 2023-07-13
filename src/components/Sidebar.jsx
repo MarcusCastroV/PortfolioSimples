@@ -1,7 +1,7 @@
 import { Card } from './Card'
 import { ContactInfo } from './ContactInfo'
 import IconLocationTwentyFour from './icons/IconLocationTwentyFour'
-import IconGithub from './icons/IconGitHub'
+import IconGithub from './icons/IconGithub'
 import IconLinkedin from './icons/IconLinkedin'
 import IconMail from './icons/IconMail'
 import { Technology } from './Technology'
