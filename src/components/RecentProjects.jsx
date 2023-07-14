@@ -20,7 +20,7 @@ export const RecentProjects = () => {
   return (
     <div className='flex gap-[3%] flex-wrap'>
       {repos.length > 0 &&
-        repos.filter((repo) => repo.id !== 666090106).slice(0, 4).map((repo) => (
+        repos.filter((repo) => repo.id !== 666090106 && repo.id !== 660729031 && !repo.is_template).slice(0, 6).map((repo) => (
           <Card
             key={repo.id}
             h='h-56'
@@ -47,6 +47,7 @@ export const RecentProjects = () => {
                   href={repo.html_url}
                   target='blank'
                   rel='noopener noreferrer'
+                  title='Repositório no LinkedIn'
                 >
                   <IconGithub />
                 </a>
@@ -68,6 +69,8 @@ export const RecentProjects = () => {
                       ? 'bg-[#3178C6]'
                       : repo.language === 'JavaScript'
                       ? 'bg-[#F1E05A]'
+                      : repo.language === 'CSS' 
+                      ? 'bg-[#563D7C]'
                       : 'bg-black'
                   }`}
                 ></span>

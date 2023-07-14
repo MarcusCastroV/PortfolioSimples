@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Card } from './Card'
 import { ContactInfo } from './ContactInfo'
 import IconLocationTwentyFour from './icons/IconLocationTwentyFour'
@@ -25,7 +26,7 @@ export const Sidebar = () => {
   return (
     <div className='w-full md:w-3/12 h-auto px-5 pb-5 flex flex-col justify-center items-center'>
       <Card h='h-72' align='items-center'>
-        <div className='rounded-full filter drop-shadow-md bg-white w-32 h-32 flex mb-5'></div>
+        <img src="/profile.png" alt="texto alternativo" className='border-2 border-[#C084FC] rounded-full w-32 h-32 flex mb-5' width='32' height='32'/>
         <h1 className='text-lg'>Marcus Castro</h1>
       </Card>
       <Card h={'h-56'}>
@@ -64,30 +65,26 @@ export const Sidebar = () => {
         ))}
         </div>
       </Card>
-      <Card h={'h-64'} justify={'justify-start'}>
+      <Card h={'h-32'} justify={'justify-start'}>
           <h1 className='ml-5 mt-5 mb-2 text-lg'>
             Experiências
           </h1>
           <ul>
-            <li className=' ml-14 list-disc'>
-              lorem25
-            </li>
-            <li className=' ml-14 list-disc'>
-              lorem25
+            <li className=' ml-14 list-disc '>
+              Tutor - Mapa da Programação <br/>
+              03/23 - atual
             </li>
           </ul>
       </Card>
-      <Card h={'h-64'} justify={'justify-start'} >
+      <Card h={'h-32'} justify={'justify-start'} >
           <h1 className='ml-5 mt-5 mb-2 text-lg'>
             Educação
           </h1>
           <ul>
-            <li className=' ml-14 list-disc'>
-              lorem25
+            <li className=' ml-14 list-disc text-s'>
+             ADS - XP Educação <br/> 03/23 - 10/25
             </li>
-            <li className=' ml-14 list-disc'>
-              lorem25
-            </li>
+             
           </ul>
       </Card>
 
